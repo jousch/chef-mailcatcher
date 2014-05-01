@@ -7,7 +7,7 @@
 
 # This is a dependency of MailCatcher
 case node['platform_family']
-    when "debian"
+    when "debian", "ubuntu"
         package "sqlite"
         package "libsqlite3-dev"
         package "make"
